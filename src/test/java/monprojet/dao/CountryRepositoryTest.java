@@ -43,4 +43,16 @@ public class CountryRepositoryTest {
         assertEquals(combienDePaysDansLeJeuDeTest, nombre, "On doit trouver 4 pays" );
     }
 
+    @Test
+    void nbPopuTt(){
+        assertEquals(12,countryDAO.populationPays(1));
+    }
+
+    @Test
+            void listPop(){
+        List<PaysEtPop> res = countryDAO.ListePaysPop();
+        assertEquals(3, res.size());
+    }
+
+
 }
