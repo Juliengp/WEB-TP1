@@ -49,9 +49,7 @@ public class CountryRepositoryTest {
     }
 
     @Test
-            void listPop(){
-        List<PaysEtPop> res = countryDAO.ListePaysPop();
-        assertEquals(3, res.size());
+            void listPoptest(){ assertEquals(countryDAO.ListePaysPop().size(), countryDAO.count());
     }
 
 
